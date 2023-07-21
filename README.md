@@ -87,4 +87,4 @@ STUDENT MODULE: Students can sign up and create their accounts on the platform e
 
 ## Contact
 
-Ashutosh Karwa - [Linkdeind](www.linkedin.com/in/ashutosh-karwa)
+Ashutosh Karwa - [www.linkedin.com/in/ashutosh-karwa]
