@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+<div align="center">
+  <a href="#">
+    <img src="https://static.theprint.in/wp-content/uploads/2023/05/ANI-20230517071444.jpg" alt="Logo" width="80" height="80">
+  </a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <h3 align="center">S2C Nexus</h3>
 
-## Available Scripts
+  <p align="center">
+    A Placement Portal website build in react, tailwind, nodejs and mongodb
+    <br />
+    <a href="https://github.com/ashutoshkarwa18/s2c_nexus_frontend"><strong>Explore the code here »</strong></a>
+    <br />
+    <a href="https://github.com/ashutoshkarwa18/s2c_nexus_backend"><strong>Backend code here »</strong></a>
+    <br />
+    ·
+    <a href="https://github.com/ashutoshkarwa18/s2c_nexus_frontend/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/ashutoshkarwa18/s2c_nexus_frontend/issues">Request Feature</a>
+  </p>
+</div>
 
-In the project directory, you can run:
 
-### `npm start`
+## Tech Stack
+- [React](https://react.dev/)
+- [JavaScripp(ES6)](https://facebook.github.io/react/)
+- [TailWind CSS](https://tailwindui.com/)
+- [Webpack](https://webpack.js.org/)
+- [FileSaver](https://www.npmjs.com/package/file-saver)
+- [React-router-dom v-6](#)
+- [Express](https://expressjs.com/)
+- [MongoDb](https://www.mongodb.com/cloud/atlas/register)
+- [Node.js](https://nodejs.org/en)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Installation
 
-### `npm test`
+_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repo
+   ```sh
+   git clone https://github.com/ashutoshkarwa18/s2c_nexus_frontend.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+   or
+   ```sh
+   yarn add
+   ```
+   
+3. Start the project
+    ```sh
+   npm start
+   ```
+   or
+   ```sh
+   yarn start
+   ``` 
+ 
+<!-- CONTRIBUTING -->
+## Contributing
 
-### `npm run build`
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<!-- ABOUT THE PROJECT -->
+## Features
+We are your gateway to success, connecting talented individuals with their dream careers. Our placement portal offers personalized opportunities, expert guidance, and a seamless job-seeking experience. Join us to take the next step towards a fulfilling and prosperous future.
 
-### `npm run eject`
+What you get here:
+This project is mainly divided into 3 modules:
+ADMIN MODULE: In our platform, the administrator gains access through a secure username and password login. Upon successful authentication, they gain access to a comprehensive dashboard displaying detailed information about students across various courses and departments. From this dashboard, the administrator can efficiently review and approve application forms, track the list of placed students, and manage training details. Additionally, the administrator plays a vital role in maintaining records of students' attempts and offer letters, while also providing valuable training to prepare them for upcoming recruitment drives.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+COMPANY MODULE: Companies can easily register on the portal, initiating their engagement with the recruitment process. The Company Module enables companies to create drives by providing essential details such as Eligibility criteria, Required skills, and the Job role. Companies can efficiently view the list of students who have applied for their drives, allowing them to accept or reject applications based on qualification criteria. The module facilitates companies in conducting online exams and interviews seamlessly through our portal for the selected students. Upon finalizing the selection process, companies can effortlessly send offer letters to the chosen students via email, extending job opportunities in a streamlined manner.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+STUDENT MODULE: Students can sign up and create their accounts on the platform effortlessly, unlocking access to a wealth of opportunities. Upon logging in, students can conveniently craft professional resumes by completing the resume application form, including personal and educational details. Students have the ability to register for specific drives posted by companies, gaining valuable insights into available job prospects. The platform empowers students to track and manage all their drive applications, providing clear visibility of scheduled exams or interviews required to qualify for desired job roles.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contact
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Ashutosh Karwa - [Linkdeind](www.linkedin.com/in/ashutosh-karwa)
