@@ -78,6 +78,7 @@ We are your gateway to success, connecting talented individuals with their dream
 
 What you get here:
 This project is mainly divided into 3 modules:
+
 ADMIN MODULE: In our platform, the administrator gains access through a secure username and password login. Upon successful authentication, they gain access to a comprehensive dashboard displaying detailed information about students across various courses and departments. From this dashboard, the administrator can efficiently review and approve application forms, track the list of placed students, and manage training details. Additionally, the administrator plays a vital role in maintaining records of students' attempts and offer letters, while also providing valuable training to prepare them for upcoming recruitment drives.
 
 COMPANY MODULE: Companies can easily register on the portal, initiating their engagement with the recruitment process. The Company Module enables companies to create drives by providing essential details such as Eligibility criteria, Required skills, and the Job role. Companies can efficiently view the list of students who have applied for their drives, allowing them to accept or reject applications based on qualification criteria. The module facilitates companies in conducting online exams and interviews seamlessly through our portal for the selected students. Upon finalizing the selection process, companies can effortlessly send offer letters to the chosen students via email, extending job opportunities in a streamlined manner.
