@@ -6,7 +6,7 @@
   <h3 align="center">S2C Nexus</h3>
 
   <p align="center">
-    A Placement Portal website build in react, tailwind, nodejs and mongodb
+    A Placement Portal build in react, tailwind, nodejs and mongodb
     <br />
     <a href="https://github.com/ashutoshkarwa18/s2c_nexus_frontend"><strong>Explore the code here »</strong></a>
     <br />
