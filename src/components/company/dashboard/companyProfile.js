@@ -27,7 +27,7 @@ export default function CompanyProf() {
 
   const handleCompanyDetailsUpdate = (e) => {
     e.preventDefault()
-    // axios.post('http://localhost:8080/company/updateDetails', {
+    // axios.post('https://s2c-nexus-3gq5.onrender.com/company/updateDetails', {
     //   studentId: "638d14885c37719538d6c86d",
     //   key: "compDetails",
     //   newData: compData

@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux'
 export default function PersonalDetails() {  
   const studentId = useSelector(state=> state.identity.studentId)
   useEffect( ()=> {
-     axios.get("http://localhost:8080/student/getDetails", {
+     axios.get("https://s2c-nexus-3gq5.onrender.com/student/getDetails", {
       params: {
         studentId: localStorage.getItem("activeStudentId")
       }
@@ -40,7 +40,7 @@ export default function PersonalDetails() {
 
   const handlePersonalDetailsUpdate = (e)=> {
     e.preventDefault()
-    axios.post('http://localhost:8080/student/updateDetails', {
+    axios.post('https://s2c-nexus-3gq5.onrender.com/student/updateDetails', {
       studentId: localStorage.getItem("activeStudentId"),
       key: "personalDetails",
       newData: personalData

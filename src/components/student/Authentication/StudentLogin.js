@@ -34,7 +34,7 @@ export default function StudentLogin() {
   const handleLoginSubmit = (e) => {
     e.preventDefault()
     setIsLoading(true)
-    axios.get('http://localhost:8080/student/login', {
+    axios.get('https://s2c-nexus-3gq5.onrender.com/student/login', {
       params: credentials
     }).then(function (response) {
       if (response.data.success) {

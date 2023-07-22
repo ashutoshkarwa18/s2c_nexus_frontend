@@ -5,7 +5,7 @@ import axios from 'axios';
 
 const StudentDriveInfo = () => {
   useEffect(() => {
-    axios.get('http://localhost:8080/company/driveInfo', {
+    axios.get('https://s2c-nexus-3gq5.onrender.com/company/driveInfo', {
       params: {
         driveId: localStorage.getItem("activeDriveId")
       }
@@ -48,7 +48,7 @@ const StudentDriveInfo = () => {
       driveId: localStorage.getItem("activeDriveId")
     }
 
-    axios.post('http://localhost:8080/company/addStudentToDrive', data)
+    axios.post('https://s2c-nexus-3gq5.onrender.com/company/addStudentToDrive', data)
     .then(response=> {
       if( response.data.success) {
         alert(response.data.message)

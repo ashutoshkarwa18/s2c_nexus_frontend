@@ -63,7 +63,7 @@ class StudentTable extends React.Component {
     this.showEmailSendProcessor()
     console.log(this.state.emailDescription)
     console.log(this.state.emailSubject)
-    axios.post("http://localhost:8080/email/users/", {
+    axios.post("https://s2c-nexus-3gq5.onrender.com/email/users/", {
       subject: this.state.emailSubject,
       description: this.state.emailDescription,
       driveData: this.state.driveData
@@ -80,7 +80,7 @@ class StudentTable extends React.Component {
     this.showEmailSendProcessor()
     console.log(this.state.emailDescription)
     console.log(this.state.emailSubject)
-    axios.post("http://localhost:8080/email/offer/", {
+    axios.post("https://s2c-nexus-3gq5.onrender.com/email/offer/", {
       subject: this.state.emailSubject,
       description: this.state.emailDescription,
       driveData: this.state.driveData
@@ -110,7 +110,7 @@ class StudentTable extends React.Component {
           }
         }
       })
-      axios.post('http://localhost:8080/company/filterStudentsByTest', {
+      axios.post('https://s2c-nexus-3gq5.onrender.com/company/filterStudentsByTest', {
         driveId: localStorage.getItem("activeCompanyDriveId"),
         studentEmails: sortedEmails,
       }).then(response => {
@@ -148,7 +148,7 @@ class StudentTable extends React.Component {
           }
         }
       })
-      axios.post('http://localhost:8080/company/filterStudentsByInterview', {
+      axios.post('https://s2c-nexus-3gq5.onrender.com/company/filterStudentsByInterview', {
         driveId: localStorage.getItem("activeCompanyDriveId"),
         studentEmails: sortedEmails,
       }).then(response => {
@@ -186,7 +186,7 @@ class StudentTable extends React.Component {
   }
 
   loadDriveData() {
-    axios.get('http://localhost:8080/company/driveInfo', {
+    axios.get('https://s2c-nexus-3gq5.onrender.com/company/driveInfo', {
       params: {
         driveId: localStorage.getItem("activeCompanyDriveId")
       }
@@ -213,7 +213,7 @@ class StudentTable extends React.Component {
 
   componentDidMount() {
     this.loadDriveData()
-    // axios.get('http://localhost:8080/company/appliedStudentsDrive', {
+    // axios.get('https://s2c-nexus-3gq5.onrender.com/company/appliedStudentsDrive', {
     //   params: {
     //     driveId: localStorage.getItem("activeCompanyDriveId")
     //   }
@@ -247,7 +247,7 @@ class StudentTable extends React.Component {
     e.preventDefault()   
     console.log(e.target.id)
     const studentId = e.target.id
-    axios.get('http://localhost:8080/student/getDetails', {
+    axios.get('https://s2c-nexus-3gq5.onrender.com/student/getDetails', {
       params:{
         studentId: studentId,
       }
@@ -338,7 +338,7 @@ class StudentTable extends React.Component {
   handleRejectStudent = (e) => {
     e.preventDefault()
     const studentId = e.target.id
-    axios.post('http://localhost:8080/company/removeStudentFromDrive', {
+    axios.post('https://s2c-nexus-3gq5.onrender.com/company/removeStudentFromDrive', {
       studentId: studentId,
       driveId: localStorage.getItem("activeCompanyDriveId")
     }).then(response => {
@@ -374,7 +374,7 @@ class StudentTable extends React.Component {
   handleDriveDetails = (e) => {
     e.preventDefault()
     this.setState({ show: false })
-    axios.post('http://localhost:8080/company/updateDrive', {
+    axios.post('https://s2c-nexus-3gq5.onrender.com/company/updateDrive', {
       driveId: localStorage.getItem("activeCompanyDriveId"),
       updatedData: this.state.formData
     })

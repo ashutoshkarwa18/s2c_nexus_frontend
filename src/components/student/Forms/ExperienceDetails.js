@@ -3,7 +3,7 @@ import axios from 'axios'
 
 export default function ExperienceDetails() {
   useEffect(() => {
-    axios.get("http://localhost:8080/student/getDetails", {
+    axios.get("https://s2c-nexus-3gq5.onrender.com/student/getDetails", {
       params: {
         studentId: localStorage.getItem("activeStudentId")
       }
@@ -48,7 +48,7 @@ export default function ExperienceDetails() {
 
   const handleExperienceDetailsUpdate = e => {
     e.preventDefault()
-    axios.post('http://localhost:8080/student/updateDetails', {
+    axios.post('https://s2c-nexus-3gq5.onrender.com/student/updateDetails', {
       studentId: localStorage.getItem("activeStudentId"),
       key: "experienceDetails",
       newData: experienceData

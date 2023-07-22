@@ -113,7 +113,7 @@ class DriveForm extends Component {
   }
   // const history = useHistory()
   
-    axios.post('http://localhost:8080/company/createDrive', data)
+    axios.post('https://s2c-nexus-3gq5.onrender.com/company/createDrive', data)
     .then(function (response) {
       if(response.data.success) {
         console.log(response.data.message)

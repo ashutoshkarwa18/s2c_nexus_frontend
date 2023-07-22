@@ -5,7 +5,7 @@ import image from '../../images/comp_login.jpg'
 export default function AppliedStudentDrive() {
     const [appliedDrives, setAppliedDrives] = useState([])
     useEffect(() => {
-        axios.get('http://localhost:8080/student/getAppliedDrives', {
+        axios.get('https://s2c-nexus-3gq5.onrender.com/student/getAppliedDrives', {
             params: {
                 studentId: localStorage.getItem("activeStudentId")
             }

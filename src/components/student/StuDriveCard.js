@@ -8,7 +8,7 @@ import logo from '../../images/logos.png'
 
 export default function StuDriveCard(props) {
     // useEffect(() => {
-    //     axios.get('http://localhost:8080/company/driveInfo', {
+    //     axios.get('https://s2c-nexus-3gq5.onrender.com/company/driveInfo', {
     //       params: {
     //         driveId: props.driveData._id
     //       }

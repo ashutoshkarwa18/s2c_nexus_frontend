@@ -29,7 +29,7 @@ function DiscussionForum() {
   // }
 
   useEffect(() => {
-    axios.get('http://localhost:8080/discussion/getMessages')
+    axios.get('https://s2c-nexus-3gq5.onrender.com/discussion/getMessages')
     .then(function (response) {
       console.log(response)
       if (response.data.success) {

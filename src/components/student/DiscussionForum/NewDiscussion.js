@@ -18,7 +18,7 @@ function NewDiscussion(props) {
   const submitQuestion = (e) =>{
     // e.preventDefault()
     // props.addToMessages(newMessage)
-    axios.post('http://localhost:8080/discussion/addNewMessage', {message:newMessage})
+    axios.post('https://s2c-nexus-3gq5.onrender.com/discussion/addNewMessage', {message:newMessage})
       .then(function (response) {
         if (response.data.success) {
           console.log(response.data.message)
