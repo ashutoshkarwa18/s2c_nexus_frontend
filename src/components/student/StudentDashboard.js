@@ -9,7 +9,7 @@ export default function StudentDashboard() {
   const [studentData, setStudentData] = useState({})
   useEffect(() => {
     var student = {}
-    axios.get('https://s2c-nexus-3gq5.onrender.com/student/getDetails', {
+    axios.get('https://s2cnexus.onrender.com/student/getDetails', {
       params: {
         studentId: localStorage.getItem("activeStudentId")
       }
@@ -18,7 +18,7 @@ export default function StudentDashboard() {
         student = response.data.studentData
         if (student.academicDetails.tenth) {
           localStorage.setItem("activeStudentData", JSON.stringify(student))
-          return axios.get('https://s2c-nexus-3gq5.onrender.com/student/drives', {
+          return axios.get('https://s2cnexus.onrender.com/student/drives', {
             params: {
               studentData: student
             }

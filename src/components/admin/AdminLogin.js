@@ -31,7 +31,7 @@ export default function AdminLogin() {
   const handleLoginSubmit = (e) => {
     e.preventDefault()
     setIsLoading(true)
-    axios.get('https://s2c-nexus-3gq5.onrender.com/admin/login', {
+    axios.get('https://s2cnexus.onrender.com/admin/login', {
       params: credentials
     }).then(function (response) {
       console.log(response)

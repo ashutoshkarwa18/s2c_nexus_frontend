@@ -7,7 +7,7 @@ function DashboardCard01() {
   const [count, setCount] = useState([])
   
   useEffect(() => {
-      axios.get('https://s2c-nexus-3gq5.onrender.com/student/getAllDetailsCount'
+      axios.get('https://s2cnexus.onrender.com/student/getAllDetailsCount'
       )
         .then(function (response) {
           if (response.data.success) {

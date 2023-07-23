@@ -29,7 +29,7 @@ export default function Signup() {
 
   const handleSignupSubmit = (e) => {
     e.preventDefault()
-    axios.post('https://s2c-nexus-3gq5.onrender.com/company/signup', companyInfo)
+    axios.post('https://s2cnexus.onrender.com/company/signup', companyInfo)
       .then(function (response) {
         if (response.data.success) {
           console.log(response.data.message)

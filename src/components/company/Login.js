@@ -33,7 +33,7 @@ export default function Login() {
 
   const handleLoginSubmit = (e) => {
     e.preventDefault()
-    axios.post('https://s2c-nexus-3gq5.onrender.com/company/login', credentials)
+    axios.post('https://s2cnexus.onrender.com/company/login', credentials)
     .then(function (response) {
       if(response.data.success) {
         console.log(response.data)

@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export default function AcademicDetails() {
   useEffect(() => {
-    axios.get("https://s2c-nexus-3gq5.onrender.com/student/getDetails", {
+    axios.get("https://s2cnexus.onrender.com/student/getDetails", {
       params: {
         studentId: localStorage.getItem("activeStudentId")
       }
@@ -136,7 +136,7 @@ const handleAcademicDetailSubmit = (e) => {
     certifications: certifications,
     technicalSkills: technicalSkills.split(",")
   }
-  axios.post('https://s2c-nexus-3gq5.onrender.com/student/updateDetails', {
+  axios.post('https://s2cnexus.onrender.com/student/updateDetails', {
     studentId: localStorage.getItem("activeStudentId"),
     key: "academicDetails",
     newData: payload

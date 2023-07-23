@@ -9,7 +9,7 @@ export default function StudentInfo() {
     const [students, setStudents] = useState([])
     const [filteredStudents, setFilteredStudents] = useState([])
     useEffect(() => {
-        axios.get('https://s2c-nexus-3gq5.onrender.com/student/getAllDetails').then(response => {
+        axios.get('https://s2cnexus.onrender.com/student/getAllDetails').then(response => {
             if (response.data.success) {
                 setStudents(response.data.studentData)
                 setFilteredStudents(response.data.studentData)

@@ -24,7 +24,7 @@ function OpenDiscussion(props){
 
   const submitResponse = (e) =>{
     // e.preventDefault()
-    axios.post('https://s2c-nexus-3gq5.onrender.com/discussion/updateMessageContent', {
+    axios.post('https://s2cnexus.onrender.com/discussion/updateMessageContent', {
       msg_id:props.message._id, 
       reply: response
     })

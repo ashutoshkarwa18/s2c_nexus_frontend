@@ -31,7 +31,7 @@ export default function AdminSignup() {
     const handleSignupSubmit = (e) => {
         e.preventDefault()
         setIsLoading(true)
-        axios.post('https://s2c-nexus-3gq5.onrender.com/admin/signup', credentials).then(function (response) {
+        axios.post('https://s2cnexus.onrender.com/admin/signup', credentials).then(function (response) {
             if (response.data.success) {
                 setIsLoading(false)
                 alert(response.data.message)

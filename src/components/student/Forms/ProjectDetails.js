@@ -4,7 +4,7 @@ import axios from 'axios';
 
 export default function ProjectDetails() {
   useEffect(() => {
-    axios.get("https://s2c-nexus-3gq5.onrender.com/student/getDetails", {
+    axios.get("https://s2cnexus.onrender.com/student/getDetails", {
       params: {
         studentId: localStorage.getItem("activeStudentId")
       }
@@ -44,7 +44,7 @@ export default function ProjectDetails() {
 
   const handleProjectDetailsUpdate = (e) => {
     e.preventDefault()
-    axios.post('https://s2c-nexus-3gq5.onrender.com/student/updateDetails', {
+    axios.post('https://s2cnexus.onrender.com/student/updateDetails', {
       studentId: localStorage.getItem("activeStudentId"),
       key: "projectDetails",
       newData: projectData

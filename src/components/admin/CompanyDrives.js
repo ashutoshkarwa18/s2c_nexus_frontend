@@ -13,7 +13,7 @@ export default function CompanyDrives(props) {
 
     useEffect(() => {
 
-        axios.get('https://s2c-nexus-3gq5.onrender.com/company/allDrives')
+        axios.get('https://s2cnexus.onrender.com/company/allDrives')
           .then(function (response) {
             if (response.data.success) {
               setDriveData(response.data.drives)

@@ -13,7 +13,7 @@ export default function CompanyDash() {
   useEffect(() => {
     var companyId = localStorage.getItem("activeCompanyId")
     if (companyId) {
-      axios.get('https://s2c-nexus-3gq5.onrender.com/company/drives', {
+      axios.get('https://s2cnexus.onrender.com/company/drives', {
         params: {
           companyId: companyId
         }
